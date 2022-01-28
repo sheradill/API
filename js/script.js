@@ -15,6 +15,7 @@ const searchUser = async () => {
     let response = await requset.json() 
     console.log(response.results)
     renderUsers(response.results)
+    input.value = ''
   }
 
 
